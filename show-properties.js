@@ -14,13 +14,15 @@ var angular2_1 = require('angular2/angular2');
 var DisplayComponent = (function () {
     function DisplayComponent() {
         this.myName = "Alice";
+        this.names = ["Aarav", "Martin", "Shannon", "Ariana", "Kai"];
     }
     DisplayComponent = __decorate([
         angular2_1.Component({
             selector: 'display'
         }),
         angular2_1.View({
-            template: "\n   <p>My name: {{ myName }}</p>\n  "
+            template: "\n   <p>My name: {{ myName }}</p>\n   <p>Friends:</p>\n   <ul>\n    <li *ng-for=\"#name of names\">\n      {{ name }}\n    </li>\n  </ul>\n  ",
+            directives: [angular2_1.NgFor]
         }), 
         __metadata('design:paramtypes', [])
     ], DisplayComponent);

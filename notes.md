@@ -37,3 +37,5 @@ TypeScript supports ES6 module loading syntax, for JavaScript code. Pick only wh
 
 #### Interpolation
 Method for binding text into templates is through interpolation. Angular automatically binds the data with template by calling a new on your Component.
+
+#### Use NgFor on view on arrays
