@@ -26,3 +26,12 @@ For NodeJS users: ```server```
 2. Load the Angular library at the top of the file
 3. Make a root component for your application
 4. Bootstrap Angular
+
+## Explanations
+
+1. Its all tree
+Angular apps are a tree of components. We defined a root component ```AppComponent``` which will be top level container for the app. Its job is to provide a location in ```index.html``` file where app will be rendering through its element ```<my-app>```. Root component loads initial template for application that will load other components to perform functions for applications (menus, views, forms).
+2. Annotations
+A component annotation describes details about the component. Identified by ```@``` sign. ```@Component``` defines the HTML tag by specifying its CSS selector. ```@View``` defines the HTML that represents the component. To use external template, specify a ```templateUrl``` property with path to HTML file.
+3. import vs window.angular
+TypeScript supports ES6 module loading syntax, for JavaScript code. Pick only what you need for your app.
