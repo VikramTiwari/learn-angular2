@@ -1,7 +1,6 @@
-## Getting Started Notes
-==
+# Getting Started Notes
 
-### Set up dev environment
+## Set up dev environment
 Along with the above, set up the dev environ using the following:
 1. Install Typescript
 ```
@@ -29,9 +28,12 @@ For NodeJS users: ```server```
 
 ## Explanations
 
-1. Its all tree
+#### Its all tree
 Angular apps are a tree of components. We defined a root component ```AppComponent``` which will be top level container for the app. Its job is to provide a location in ```index.html``` file where app will be rendering through its element ```<my-app>```. Root component loads initial template for application that will load other components to perform functions for applications (menus, views, forms).
-2. Annotations
+#### Annotations
 A component annotation describes details about the component. Identified by ```@``` sign. ```@Component``` defines the HTML tag by specifying its CSS selector. ```@View``` defines the HTML that represents the component. To use external template, specify a ```templateUrl``` property with path to HTML file.
-3. import vs window.angular
+#### import vs window.angular
 TypeScript supports ES6 module loading syntax, for JavaScript code. Pick only what you need for your app.
+
+#### Interpolation
+Method for binding text into templates is through interpolation. Angular automatically binds the data with template by calling a new on your Component.
